@@ -24,3 +24,18 @@ C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\
 C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.VentanaExtravio.resources
 C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.VentanaEncontrado.resources
 C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.VentanaRegistroUsuario.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\bin\Debug\Splash.exe.config
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\bin\Debug\Splash.exe
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\bin\Debug\Splash.pdb
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.csprojResolveAssemblyReference.cache
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.Escritorio.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.Form1.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.Form2.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.Properties.Resources.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.VentanaEncontrado.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.VentanaExtravio.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.VentanaRegistroUsuario.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.csproj.GenerateResource.Cache
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.csproj.CoreCompileInputs.cache
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.exe
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.pdb

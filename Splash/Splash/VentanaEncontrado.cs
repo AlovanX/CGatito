@@ -86,15 +86,15 @@ namespace Splash
         public void limpiar()
 
         {
-            txt_resguardado.Text = "";
+            cboxResguardo.SelectedIndex = -1;
             txt_raza.Text = "";
             txt_color.Text = "";
-            txt_placa.Text = "";
+            cboxPlaca.SelectedIndex = -1;
             txt_caracteristicas.Text = "";
             txt_calle.Text = "";
             txt_colonia.Text = "";
             txt_ciudad.Text = "";
-            txt_estado.Text = "";
+            cboxEstatus.SelectedIndex = -1;
             txt_id_reporte_encontrado.Text = "";
             strFilePath = "";
             pb_imagen.Image = null;
@@ -129,22 +129,22 @@ namespace Splash
 
                 }
 
-                if (txt_resguardado.Text != "" && txt_estado.Text != "" && txt_raza.Text != "" && txt_color.Text != "" && txt_caracteristicas.Text != "" && txt_ciudad.Text != "" && txt_colonia.Text != "" &&
+                if (cboxResguardo.SelectedIndex != -1 && cboxEstatus.SelectedIndex != -1 && txt_raza.Text != "" && txt_color.Text != "" && txt_caracteristicas.Text != "" && txt_ciudad.Text != "" && txt_colonia.Text != "" &&
                     txt_calle.Text != "")
                 {
                     string insert = "INSERT INTO ReporteEncontrado (fecha_enc, estado, raza, color, placa, caracteristicas, ciudad, colonia, calle, id_usuario, resguardado, foto) values('"
                     + picker_fecha.Value.Date + "','"
                     //+ picker_fecha.Value.Date.ToString("yyyyMMdd") + "','"
-                    + txt_estado.Text + "','"
+                    + cboxEstatus.SelectedItem + "','"
                     + txt_raza.Text + "','"
                     + txt_color.Text + "','"
-                    + txt_placa.Text + "','"
+                    + cboxPlaca.SelectedItem + "','"
                     + txt_caracteristicas.Text + "','"
                     + txt_ciudad.Text + "','"
                     + txt_colonia.Text + "','"
                     + txt_calle.Text + "',"
                     + iduser + ",'"
-                    + txt_resguardado.Text + "','"
+                    + cboxResguardo.SelectedItem + "','"
                     + strFilePath + "')";
 
                     res = perro.ABM(insert);
@@ -194,10 +194,10 @@ namespace Splash
 
                 try
                 {
-                    string modificar = "UPDATE ReporteEncontrado set estado = '" + txt_estado.Text + "', raza = '" + txt_raza.Text + 
-                        "', color = '" + txt_color.Text + "', placa = '" + txt_placa.Text + "', caracteristicas = '" + txt_caracteristicas.Text +
+                    string modificar = "UPDATE ReporteEncontrado set estado = '" + cboxEstatus.SelectedItem + "', raza = '" + txt_raza.Text + 
+                        "', color = '" + txt_color.Text + "', placa = '" + cboxPlaca.SelectedItem + "', caracteristicas = '" + txt_caracteristicas.Text +
                         "', ciudad = '" + txt_ciudad.Text + "', colonia = '" + txt_colonia.Text + "', calle = '" + txt_calle.Text +
-                         "', foto = '" + txt_path.Text + "', resguardado = '" + txt_resguardado.Text +
+                         "', foto = '" + txt_path.Text + "', resguardado = '" + cboxResguardo.SelectedItem +
                         "' WHERE id_rep_enc = " + txt_id_reporte_encontrado.Text;
 
                     res = perro.ABM(modificar);
@@ -346,16 +346,17 @@ namespace Splash
                     if (ResConsul.Read())
                     {
                         txt_id_reporte_encontrado.Text = id;  //id
-                        txt_estado.Text = ResConsul.GetString(2).ToString(); //estado
+                        cboxEstatus.SelectedItem = ResConsul.GetString(2).ToString(); //estado
                         txt_raza.Text = ResConsul.GetString(3).ToString(); //raza
                         txt_color.Text = ResConsul.GetString(4).ToString(); //color
-                        txt_placa.Text = ResConsul.GetString(5).ToString(); //placa
+                        cboxPlaca.SelectedItem = ResConsul.GetString(5).ToString(); //placa
                         txt_caracteristicas.Text = ResConsul.GetString(6).ToString(); //caracteristicas
                         txt_ciudad.Text = ResConsul.GetString(7).ToString(); //ciudad
                         txt_colonia.Text = ResConsul.GetString(8).ToString(); //colonia
                         txt_calle.Text = ResConsul.GetString(9).ToString(); //calle
+                        cboxResguardo.SelectedItem = ResConsul.GetString(5).ToString(); //Resguardado
                         pb_imagen.Image = new Bitmap(ResConsul.GetString(11).ToString());
-                        txt_resguardado.Text = ResConsul.GetString(12).ToString(); //calle
+                        
 
                         txt_path.Text = ResConsul.GetString(11).ToString();
                     }

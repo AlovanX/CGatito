@@ -41,17 +41,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_caracteristicas = new System.Windows.Forms.TextBox();
-            this.txt_placa = new System.Windows.Forms.TextBox();
             this.txt_color = new System.Windows.Forms.TextBox();
             this.txt_raza = new System.Windows.Forms.TextBox();
-            this.txt_resguardado = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.txt_estado = new System.Windows.Forms.TextBox();
             this.txt_ciudad = new System.Windows.Forms.TextBox();
             this.txt_colonia = new System.Windows.Forms.TextBox();
             this.txt_calle = new System.Windows.Forms.TextBox();
@@ -80,6 +77,9 @@
             this.mensaje_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_path = new System.Windows.Forms.Label();
+            this.cboxPlaca = new System.Windows.Forms.ComboBox();
+            this.cboxEstatus = new System.Windows.Forms.ComboBox();
+            this.cboxResguardo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -189,11 +189,11 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.cboxResguardo);
+            this.panel2.Controls.Add(this.cboxPlaca);
             this.panel2.Controls.Add(this.txt_caracteristicas);
-            this.panel2.Controls.Add(this.txt_placa);
             this.panel2.Controls.Add(this.txt_color);
             this.panel2.Controls.Add(this.txt_raza);
-            this.panel2.Controls.Add(this.txt_resguardado);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label3);
@@ -214,14 +214,6 @@
             this.txt_caracteristicas.Size = new System.Drawing.Size(256, 51);
             this.txt_caracteristicas.TabIndex = 12;
             // 
-            // txt_placa
-            // 
-            this.txt_placa.Location = new System.Drawing.Point(82, 71);
-            this.txt_placa.MaxLength = 2;
-            this.txt_placa.Name = "txt_placa";
-            this.txt_placa.Size = new System.Drawing.Size(256, 20);
-            this.txt_placa.TabIndex = 11;
-            // 
             // txt_color
             // 
             this.txt_color.Location = new System.Drawing.Point(82, 45);
@@ -237,14 +229,6 @@
             this.txt_raza.Name = "txt_raza";
             this.txt_raza.Size = new System.Drawing.Size(256, 20);
             this.txt_raza.TabIndex = 9;
-            // 
-            // txt_resguardado
-            // 
-            this.txt_resguardado.Location = new System.Drawing.Point(126, 109);
-            this.txt_resguardado.MaxLength = 2;
-            this.txt_resguardado.Name = "txt_resguardado";
-            this.txt_resguardado.Size = new System.Drawing.Size(212, 20);
-            this.txt_resguardado.TabIndex = 8;
             // 
             // label5
             // 
@@ -304,7 +288,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.txt_estado);
+            this.panel3.Controls.Add(this.cboxEstatus);
             this.panel3.Controls.Add(this.txt_ciudad);
             this.panel3.Controls.Add(this.txt_colonia);
             this.panel3.Controls.Add(this.txt_calle);
@@ -316,14 +300,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(391, 103);
             this.panel3.TabIndex = 51;
-            // 
-            // txt_estado
-            // 
-            this.txt_estado.Location = new System.Drawing.Point(273, 73);
-            this.txt_estado.MaxLength = 50;
-            this.txt_estado.Name = "txt_estado";
-            this.txt_estado.Size = new System.Drawing.Size(98, 20);
-            this.txt_estado.TabIndex = 16;
             // 
             // txt_ciudad
             // 
@@ -389,9 +365,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label4.Location = new System.Drawing.Point(205, 77);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
+            this.label4.Size = new System.Drawing.Size(63, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Estado:";
+            this.label4.Text = "Estatus:";
             // 
             // pb_imagen
             // 
@@ -605,6 +581,44 @@
             this.txt_path.TabIndex = 70;
             this.txt_path.Text = ".";
             // 
+            // cboxPlaca
+            // 
+            this.cboxPlaca.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cboxPlaca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxPlaca.FormattingEnabled = true;
+            this.cboxPlaca.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.cboxPlaca.Location = new System.Drawing.Point(82, 74);
+            this.cboxPlaca.Name = "cboxPlaca";
+            this.cboxPlaca.Size = new System.Drawing.Size(102, 21);
+            this.cboxPlaca.TabIndex = 71;
+            // 
+            // cboxEstatus
+            // 
+            this.cboxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxEstatus.FormattingEnabled = true;
+            this.cboxEstatus.Items.AddRange(new object[] {
+            "Avistado",
+            "Encontrado"});
+            this.cboxEstatus.Location = new System.Drawing.Point(273, 74);
+            this.cboxEstatus.Name = "cboxEstatus";
+            this.cboxEstatus.Size = new System.Drawing.Size(98, 21);
+            this.cboxEstatus.TabIndex = 71;
+            // 
+            // cboxResguardo
+            // 
+            this.cboxResguardo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cboxResguardo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxResguardo.FormattingEnabled = true;
+            this.cboxResguardo.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.cboxResguardo.Location = new System.Drawing.Point(143, 108);
+            this.cboxResguardo.Name = "cboxResguardo";
+            this.cboxResguardo.Size = new System.Drawing.Size(102, 21);
+            this.cboxResguardo.TabIndex = 72;
+            // 
             // VentanaEncontrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -683,7 +697,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox txt_caracteristicas;
-        private System.Windows.Forms.TextBox txt_placa;
         private System.Windows.Forms.TextBox txt_color;
         private System.Windows.Forms.TextBox txt_raza;
         private System.Windows.Forms.Label label5;
@@ -691,7 +704,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox txt_estado;
         private System.Windows.Forms.TextBox txt_ciudad;
         private System.Windows.Forms.TextBox txt_colonia;
         private System.Windows.Forms.TextBox txt_calle;
@@ -718,9 +730,11 @@
         private System.Windows.Forms.PictureBox pbHuella4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ErrorProvider mensaje_error;
-        private System.Windows.Forms.TextBox txt_resguardado;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label txt_path;
+        private System.Windows.Forms.ComboBox cboxPlaca;
+        private System.Windows.Forms.ComboBox cboxEstatus;
+        private System.Windows.Forms.ComboBox cboxResguardo;
     }
 }

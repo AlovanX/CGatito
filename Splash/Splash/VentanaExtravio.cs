@@ -80,6 +80,8 @@ namespace Splash
 
             mostrarDatos();
 
+            
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -106,12 +108,12 @@ namespace Splash
             txt_nombre.Text = "";
             txt_raza.Text = "";
             txt_color.Text = "";
-            txt_placa.Text = "";
+            cboxPlaca.SelectedIndex = -1;
             txt_caracteristicas.Text = "";
             txt_calle.Text = "";
             txt_colonia.Text = "";
             txt_ciudad.Text = "";
-            txt_estado.Text = "";
+            cboxEstatus.SelectedIndex = -1;
             pb_imagen.Image = null;
             strFilePath = "";
             txt_id_reporte_extravio.Text = "";
@@ -147,18 +149,18 @@ namespace Splash
 
                 }
 
-                if (txt_nombre.Text != "" && txt_estado.Text != "" && txt_raza.Text != "" && txt_color.Text != "" &&
-                    txt_placa.Text != "" && txt_caracteristicas.Text != "" && txt_ciudad.Text != "" && txt_colonia.Text != "" &&
+                if (txt_nombre.Text != "" && cboxEstatus.SelectedIndex != -1 && txt_raza.Text != "" && txt_color.Text != "" &&
+                    cboxPlaca.SelectedIndex != -1 && txt_caracteristicas.Text != "" && txt_ciudad.Text != "" && txt_colonia.Text != "" &&
                     txt_calle.Text != "")
                 {
                     string insert = "INSERT INTO ReporteExtravio (fecha_perdido, nombre, estado, raza, color, placa, caracteristicas, ciudad, colonia, foto, calle, id_usuario ) values('"
                     + picker_fecha.Value.Date + "','"
                     //+ picker_fecha.Value.Date.ToString("yyyyMMdd") + "','"
                     + txt_nombre.Text + "','"
-                    + txt_estado.Text + "','"
+                    + cboxEstatus.SelectedItem + "','"
                     + txt_raza.Text + "','"
                     + txt_color.Text + "','"
-                    + txt_placa.Text + "','"
+                    + cboxPlaca.SelectedItem + "','"
                     + txt_caracteristicas.Text + "','"
                     + txt_ciudad.Text + "','"
                     + txt_colonia.Text + "','"
@@ -235,15 +237,16 @@ namespace Splash
                     {
                         txt_id_reporte_extravio.Text = id;  //id
                         txt_nombre.Text = ResConsul.GetString(2).ToString(); //nombre
-                        txt_estado.Text = ResConsul.GetString(3).ToString(); //estado
+                        cboxEstatus.SelectedItem = ResConsul.GetString(3).ToString(); //estado
                         txt_raza.Text = ResConsul.GetString(4).ToString(); //raza
                         txt_color.Text = ResConsul.GetString(5).ToString(); //color
-                        txt_placa.Text = ResConsul.GetString(6).ToString(); //placa
+                        cboxPlaca.SelectedItem = ResConsul.GetString(6).ToString(); //placa
                         txt_caracteristicas.Text = ResConsul.GetString(7).ToString(); //caracteristicas
                         txt_ciudad.Text = ResConsul.GetString(8).ToString(); //ciudad
                         txt_colonia.Text = ResConsul.GetString(9).ToString(); //colonia
+                        txt_calle.Text = ResConsul.GetString(10).ToString(); //calle
                         pb_imagen.Image = new Bitmap(ResConsul.GetString(10).ToString());
-                        txt_calle.Text = ResConsul.GetString(11).ToString(); //calle
+                        
 
                         txt_path.Text = ResConsul.GetString(10).ToString();
                     }
@@ -290,8 +293,8 @@ namespace Splash
                 try
                 {
                     string modificar = "UPDATE ReporteExtravio set nombre = '" + txt_nombre.Text + "', estado = '" +
-                        txt_estado.Text + "', raza = '" + txt_raza.Text + "', color = '" + txt_color.Text +
-                        "', placa = '" + txt_placa.Text + "', caracteristicas = '" + txt_caracteristicas.Text +
+                        cboxEstatus.SelectedItem + "', raza = '" + txt_raza.Text + "', color = '" + txt_color.Text +
+                        "', placa = '" + cboxPlaca.SelectedItem + "', caracteristicas = '" + txt_caracteristicas.Text +
                         "', ciudad = '" + txt_ciudad.Text + "', colonia = '" + txt_colonia.Text + "', foto = '" + txt_path.Text +
                         "', calle = '" + txt_calle.Text +
                         "' WHERE id_rep_ext = " + txt_id_reporte_extravio.Text;

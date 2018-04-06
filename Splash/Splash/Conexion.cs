@@ -21,7 +21,7 @@ namespace Splash
         //Conexion save
         public static SqlConnection conn =
         //new SqlConnection("Server = SAVE-PC\\ALLICE;AttachDbFilename =" + Environment.CurrentDirectory + "\\Perros.mdf;Trusted_Connection=True");
-        new SqlConnection("Server = SAVE-PC\\ALLICE;Database=Perros;Trusted_Connection=True");
+        new SqlConnection("Server = localhost\\sqlexpress;Database=Perros;Trusted_Connection=True");
         public void CerrarConexion()
         {
             conn.Close();
