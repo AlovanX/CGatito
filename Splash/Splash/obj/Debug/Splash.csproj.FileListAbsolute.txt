@@ -1,0 +1,26 @@
+C:\Users\pc\source\repos\Splash\Splash\bin\Debug\Splash.exe.config
+C:\Users\pc\source\repos\Splash\Splash\bin\Debug\Splash.exe
+C:\Users\pc\source\repos\Splash\Splash\bin\Debug\Splash.pdb
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.csprojResolveAssemblyReference.cache
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.Form1.resources
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.Properties.Resources.resources
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.csproj.GenerateResource.Cache
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.csproj.CoreCompileInputs.cache
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.exe
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.pdb
+C:\Users\pc\source\repos\Splash\Splash\obj\Debug\Splash.Form2.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\bin\Debug\Splash.exe.config
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\bin\Debug\Splash.exe
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\bin\Debug\Splash.pdb
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.csprojResolveAssemblyReference.cache
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.Form1.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.Form2.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.Properties.Resources.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.csproj.GenerateResource.Cache
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.csproj.CoreCompileInputs.cache
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.exe
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.pdb
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.Escritorio.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.VentanaExtravio.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.VentanaEncontrado.resources
+C:\Users\Save\Documents\7A\Desarrollo de Aplicaciones\Proyecto Ana Lidia\Splash\Splash\obj\Debug\Splash.VentanaRegistroUsuario.resources
