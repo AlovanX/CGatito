@@ -106,7 +106,6 @@
             this.lblBienvenido.Size = new System.Drawing.Size(242, 20);
             this.lblBienvenido.TabIndex = 9;
             this.lblBienvenido.Text = "Bienvenido a EncontraDOGS";
-            this.lblBienvenido.Click += new System.EventHandler(this.lblBienvenido_Click);
             // 
             // lblContraseña
             // 
@@ -193,11 +192,11 @@
             this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingreso";
-            this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mensajeError)).EndInit();

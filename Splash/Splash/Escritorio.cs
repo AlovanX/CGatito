@@ -17,7 +17,8 @@ namespace Splash
 
         //variable global para almacenar id de usuario logeado
         string id_user;
-
+        private bool Cerrar = false;
+        
         public Escritorio(string id_user_p, string nombre_user_p)
         {
             InitializeComponent();
@@ -32,17 +33,34 @@ namespace Splash
             //obtenemos y almacenamos id de usuario 
             nombreUser.Text = nombre_user_p;
             id_user = id_user_p;
-        }
-
-
-        private void Escritorio_Load(object sender, EventArgs e)
-        {
 
         }
 
-        private void reporteExtravioToolStripMenuItem_Click(object sender, EventArgs e)
+        
+        private void Escritorio_FormClosing(object sender, FormClosingEventArgs e)
         {
-
+            
+            if (!Cerrar)
+            {
+                if (!Cerrar)
+                {
+                    Cerrar = true;
+                    if (MessageBox.Show("¿Está seguro que desea salir de la aplicación?", "Salir",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                    {
+                        Cerrar = false;
+                        e.Cancel = true;
+                    }
+                    else
+                    {
+                        Application.Exit();
+                    }
+                }
+                else
+                {
+                    Cerrar = false;
+                }
+            }
         }
 
         private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
@@ -51,26 +69,10 @@ namespace Splash
             new VentanaExtravio(id_user).Show();
         }
 
-          private void reporteEncontradoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void registarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Abrir formulario de reportes de encontrado
             new VentanaEncontrado(id_user).Show();
-        }
-
-
-        private void Escritorio_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //Verificar salida del programa
-            if (MessageBox.Show("Salir del programa?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation) != DialogResult.Yes)
-            {
-                e.Cancel = true;
-            }
-
         }
     }
 }

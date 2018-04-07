@@ -40,6 +40,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cboxResguardo = new System.Windows.Forms.ComboBox();
+            this.cboxPlaca = new System.Windows.Forms.ComboBox();
             this.txt_caracteristicas = new System.Windows.Forms.TextBox();
             this.txt_color = new System.Windows.Forms.TextBox();
             this.txt_raza = new System.Windows.Forms.TextBox();
@@ -49,6 +51,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cboxEstatus = new System.Windows.Forms.ComboBox();
             this.txt_ciudad = new System.Windows.Forms.TextBox();
             this.txt_colonia = new System.Windows.Forms.TextBox();
             this.txt_calle = new System.Windows.Forms.TextBox();
@@ -77,9 +80,6 @@
             this.mensaje_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_path = new System.Windows.Forms.Label();
-            this.cboxPlaca = new System.Windows.Forms.ComboBox();
-            this.cboxEstatus = new System.Windows.Forms.ComboBox();
-            this.cboxResguardo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -205,6 +205,32 @@
             this.panel2.TabIndex = 50;
             this.panel2.Tag = "";
             // 
+            // cboxResguardo
+            // 
+            this.cboxResguardo.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cboxResguardo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxResguardo.FormattingEnabled = true;
+            this.cboxResguardo.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.cboxResguardo.Location = new System.Drawing.Point(143, 108);
+            this.cboxResguardo.Name = "cboxResguardo";
+            this.cboxResguardo.Size = new System.Drawing.Size(102, 21);
+            this.cboxResguardo.TabIndex = 72;
+            // 
+            // cboxPlaca
+            // 
+            this.cboxPlaca.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cboxPlaca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxPlaca.FormattingEnabled = true;
+            this.cboxPlaca.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.cboxPlaca.Location = new System.Drawing.Point(82, 74);
+            this.cboxPlaca.Name = "cboxPlaca";
+            this.cboxPlaca.Size = new System.Drawing.Size(102, 21);
+            this.cboxPlaca.TabIndex = 71;
+            // 
             // txt_caracteristicas
             // 
             this.txt_caracteristicas.Location = new System.Drawing.Point(82, 154);
@@ -300,6 +326,18 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(391, 103);
             this.panel3.TabIndex = 51;
+            // 
+            // cboxEstatus
+            // 
+            this.cboxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxEstatus.FormattingEnabled = true;
+            this.cboxEstatus.Items.AddRange(new object[] {
+            "Avistado",
+            "Encontrado"});
+            this.cboxEstatus.Location = new System.Drawing.Point(273, 74);
+            this.cboxEstatus.Name = "cboxEstatus";
+            this.cboxEstatus.Size = new System.Drawing.Size(98, 21);
+            this.cboxEstatus.TabIndex = 71;
             // 
             // txt_ciudad
             // 
@@ -581,44 +619,6 @@
             this.txt_path.TabIndex = 70;
             this.txt_path.Text = ".";
             // 
-            // cboxPlaca
-            // 
-            this.cboxPlaca.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cboxPlaca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxPlaca.FormattingEnabled = true;
-            this.cboxPlaca.Items.AddRange(new object[] {
-            "Si",
-            "No"});
-            this.cboxPlaca.Location = new System.Drawing.Point(82, 74);
-            this.cboxPlaca.Name = "cboxPlaca";
-            this.cboxPlaca.Size = new System.Drawing.Size(102, 21);
-            this.cboxPlaca.TabIndex = 71;
-            // 
-            // cboxEstatus
-            // 
-            this.cboxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxEstatus.FormattingEnabled = true;
-            this.cboxEstatus.Items.AddRange(new object[] {
-            "Avistado",
-            "Encontrado"});
-            this.cboxEstatus.Location = new System.Drawing.Point(273, 74);
-            this.cboxEstatus.Name = "cboxEstatus";
-            this.cboxEstatus.Size = new System.Drawing.Size(98, 21);
-            this.cboxEstatus.TabIndex = 71;
-            // 
-            // cboxResguardo
-            // 
-            this.cboxResguardo.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cboxResguardo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxResguardo.FormattingEnabled = true;
-            this.cboxResguardo.Items.AddRange(new object[] {
-            "Si",
-            "No"});
-            this.cboxResguardo.Location = new System.Drawing.Point(143, 108);
-            this.cboxResguardo.Name = "cboxResguardo";
-            this.cboxResguardo.Size = new System.Drawing.Size(102, 21);
-            this.cboxResguardo.TabIndex = 72;
-            // 
             // VentanaEncontrado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -659,7 +659,6 @@
             this.Name = "VentanaEncontrado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Encontrado";
-            this.Load += new System.EventHandler(this.VentanaEncontrado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).EndInit();
             this.panel2.ResumeLayout(false);

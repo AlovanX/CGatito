@@ -101,16 +101,9 @@ namespace Splash
         }
 
 
-        private void VentanaEncontrado_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click_1(object sender, EventArgs e)
         {
-            
             buscarPorID();
-
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -233,8 +226,6 @@ namespace Splash
                 mensaje_error.SetError(txt_id_reporte_encontrado, "Ingresar Id Reporte Encontrado");
                 txt_id_reporte_encontrado.Text = "";
                 txt_id_reporte_encontrado.Focus();
-
-
             }
             else
             {
@@ -260,7 +251,6 @@ namespace Splash
 
                 }
             }
-            
         }
 
         private void button8_Click_1(object sender, EventArgs e)
@@ -375,9 +365,6 @@ namespace Splash
                     Perro.conn.Close();
 
                 }
-                
-                
-
             }
         }
     }

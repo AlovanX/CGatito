@@ -65,7 +65,6 @@
             this.reporteExtravioToolStripMenuItem.Name = "reporteExtravioToolStripMenuItem";
             this.reporteExtravioToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.reporteExtravioToolStripMenuItem.Text = "Reporte Extravío";
-            this.reporteExtravioToolStripMenuItem.Click += new System.EventHandler(this.reporteExtravioToolStripMenuItem_Click);
             // 
             // registrarToolStripMenuItem
             // 
@@ -81,7 +80,6 @@
             this.reporteEncontradoToolStripMenuItem.Name = "reporteEncontradoToolStripMenuItem";
             this.reporteEncontradoToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
             this.reporteEncontradoToolStripMenuItem.Text = "Reporte Encontrado";
-            this.reporteEncontradoToolStripMenuItem.Click += new System.EventHandler(this.reporteEncontradoToolStripMenuItem_Click);
             // 
             // registarToolStripMenuItem
             // 
@@ -183,7 +181,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Escritorio_FormClosing);
-            this.Load += new System.EventHandler(this.Escritorio_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuellasMain)).EndInit();

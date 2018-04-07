@@ -16,7 +16,7 @@ namespace Splash
     public partial class Form2 : Form
     {
         Usuario us = new Usuario();
-
+        
         public Form2()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace Splash
             //Hilo para iniciar splashscreen
             Thread hilo = new Thread(mostrarSplash);
             hilo.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(2000);
             hilo.Abort();
 
             txtCorreo.Focus();
@@ -37,48 +37,31 @@ namespace Splash
 
         void mostrarSplash()
         {
-
             Form1 sps = new Form1();
             sps.ShowDialog();
-
-        }
-
-        private void lblBienvenido_Click(object sender, EventArgs e)
-        {
 
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             //Confirmar salida del programa
-            DialogResult resultado = MessageBox.Show(" ¿Está seguro que desea salir de la aplicación?", "confirmación de salida",
-               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult resultado = MessageBox.Show("¿Está seguro que desea salir de la aplicación?", "Salir",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (resultado == DialogResult.Yes)
             {
-
                 Application.Exit();
 
             }
             else
             {
-
                 txtCorreo.Focus();
-
             }
-
         }
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
             login();
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void linkLabel1_Click(object sender, EventArgs e)
@@ -119,7 +102,7 @@ namespace Splash
                 
                 if (us.IniciarSesion(txtCorreo.Text, txtContraseña.Text))
                 {
-                    
+
                     //MessageBox.Show("Bienvenido");
                     this.Hide();
                 }

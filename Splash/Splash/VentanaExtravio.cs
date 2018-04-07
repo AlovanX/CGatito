@@ -84,11 +84,6 @@ namespace Splash
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -194,11 +189,6 @@ namespace Splash
                 
                 Perro.conn.Close();
             }
-        }
-
-        private void VentanaExtravio_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -354,14 +344,8 @@ namespace Splash
                     mostrarDatos();
                     limpiar();
                     Perro.conn.Close();
-
                 }
-
             }
-
-
-
-            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -399,11 +383,6 @@ namespace Splash
             }
         }
 
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void teclaEnter()
         {
             if (txt_id_reporte_extravio.Text != "" )
@@ -412,23 +391,6 @@ namespace Splash
             }
             else
                 txt_id_reporte_extravio.Focus();
-            
-
-        }
-
-        private void pb_eliminar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pb_actualizar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txt_id_reporte_extravio_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

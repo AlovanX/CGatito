@@ -47,7 +47,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(317, -28);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 18);
+            this.label4.Size = new System.Drawing.Size(75, 19);
             this.label4.TabIndex = 9;
             this.label4.Text = "Versión 1.0";
             // 
@@ -61,7 +61,6 @@
             this.label3.Size = new System.Drawing.Size(268, 16);
             this.label3.TabIndex = 8;
             this.label3.Text = "Desarrollado por: Códice Maya S.A. de C.V.";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -85,7 +84,6 @@
             this.label1.Size = new System.Drawing.Size(155, 45);
             this.label1.TabIndex = 6;
             this.label1.Text = "Encontra";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pbPerros
             // 
@@ -95,7 +93,6 @@
             this.pbPerros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPerros.TabIndex = 5;
             this.pbPerros.TabStop = false;
-            this.pbPerros.Click += new System.EventHandler(this.pbPerros_Click);
             // 
             // label5
             // 
@@ -147,7 +144,6 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbPerros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuellas)).EndInit();
             this.ResumeLayout(false);

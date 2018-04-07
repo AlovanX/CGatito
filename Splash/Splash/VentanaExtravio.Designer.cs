@@ -44,10 +44,12 @@
             this.label14 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txt_caracteristicas = new System.Windows.Forms.TextBox();
+            this.cboxPlaca = new System.Windows.Forms.ComboBox();
             this.txt_color = new System.Windows.Forms.TextBox();
             this.txt_raza = new System.Windows.Forms.TextBox();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cboxEstatus = new System.Windows.Forms.ComboBox();
             this.txt_ciudad = new System.Windows.Forms.TextBox();
             this.txt_colonia = new System.Windows.Forms.TextBox();
             this.txt_calle = new System.Windows.Forms.TextBox();
@@ -78,8 +80,6 @@
             this.mensaje_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_path = new System.Windows.Forms.Label();
-            this.cboxPlaca = new System.Windows.Forms.ComboBox();
-            this.cboxEstatus = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -131,7 +131,6 @@
             this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -220,7 +219,6 @@
             this.label13.Size = new System.Drawing.Size(48, 16);
             this.label13.TabIndex = 12;
             this.label13.Text = "Calle:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label14
             // 
@@ -261,6 +259,18 @@
             this.txt_caracteristicas.Size = new System.Drawing.Size(256, 51);
             this.txt_caracteristicas.TabIndex = 12;
             // 
+            // cboxPlaca
+            // 
+            this.cboxPlaca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxPlaca.FormattingEnabled = true;
+            this.cboxPlaca.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.cboxPlaca.Location = new System.Drawing.Point(82, 106);
+            this.cboxPlaca.Name = "cboxPlaca";
+            this.cboxPlaca.Size = new System.Drawing.Size(121, 21);
+            this.cboxPlaca.TabIndex = 43;
+            // 
             // txt_color
             // 
             this.txt_color.Location = new System.Drawing.Point(82, 77);
@@ -300,6 +310,19 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(391, 103);
             this.panel3.TabIndex = 15;
+            // 
+            // cboxEstatus
+            // 
+            this.cboxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboxEstatus.FormattingEnabled = true;
+            this.cboxEstatus.Items.AddRange(new object[] {
+            "Perdido",
+            "Resguardado",
+            "Encontrado"});
+            this.cboxEstatus.Location = new System.Drawing.Point(273, 73);
+            this.cboxEstatus.Name = "cboxEstatus";
+            this.cboxEstatus.Size = new System.Drawing.Size(100, 21);
+            this.cboxEstatus.TabIndex = 43;
             // 
             // txt_ciudad
             // 
@@ -370,7 +393,6 @@
             this.txt_id_reporte_extravio.Name = "txt_id_reporte_extravio";
             this.txt_id_reporte_extravio.Size = new System.Drawing.Size(100, 20);
             this.txt_id_reporte_extravio.TabIndex = 19;
-            this.txt_id_reporte_extravio.TextChanged += new System.EventHandler(this.txt_id_reporte_extravio_TextChanged);
             this.txt_id_reporte_extravio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_id_reporte_extravio_KeyPress);
             // 
             // txt_id_usuario
@@ -493,7 +515,6 @@
             this.pb_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_actualizar.TabIndex = 32;
             this.pb_actualizar.TabStop = false;
-            this.pb_actualizar.Click += new System.EventHandler(this.pb_actualizar_Click);
             // 
             // pb_eliminar
             // 
@@ -503,7 +524,6 @@
             this.pb_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_eliminar.TabIndex = 33;
             this.pb_eliminar.TabStop = false;
-            this.pb_eliminar.Click += new System.EventHandler(this.pb_eliminar_Click);
             // 
             // pb_guardar
             // 
@@ -594,31 +614,6 @@
             this.txt_path.TabIndex = 42;
             this.txt_path.Text = ".";
             // 
-            // cboxPlaca
-            // 
-            this.cboxPlaca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxPlaca.FormattingEnabled = true;
-            this.cboxPlaca.Items.AddRange(new object[] {
-            "Si",
-            "No"});
-            this.cboxPlaca.Location = new System.Drawing.Point(82, 106);
-            this.cboxPlaca.Name = "cboxPlaca";
-            this.cboxPlaca.Size = new System.Drawing.Size(121, 21);
-            this.cboxPlaca.TabIndex = 43;
-            // 
-            // cboxEstatus
-            // 
-            this.cboxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboxEstatus.FormattingEnabled = true;
-            this.cboxEstatus.Items.AddRange(new object[] {
-            "Perdido",
-            "Resguardado",
-            "Encontrado"});
-            this.cboxEstatus.Location = new System.Drawing.Point(273, 73);
-            this.cboxEstatus.Name = "cboxEstatus";
-            this.cboxEstatus.Size = new System.Drawing.Size(100, 21);
-            this.cboxEstatus.TabIndex = 43;
-            // 
             // VentanaExtravio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -659,7 +654,6 @@
             this.Name = "VentanaExtravio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Extravío";
-            this.Load += new System.EventHandler(this.VentanaExtravio_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
