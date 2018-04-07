@@ -99,7 +99,20 @@ namespace Splash
         public void limpiar()
 
         {
-
+            /*
+            txt_nombre.Text = "El Miau";
+            txt_raza.Text = "Siamés";
+            txt_color.Text = "Crema con manchas castañas";
+            cboxPlaca.SelectedIndex = 1;
+            txt_caracteristicas.Text = picker_fecha.Value.Date.ToString();//picker_fecha.Value.ToString("yyyy-MM-dd");
+            txt_calle.Text = "Isla Izaro 2889";
+            txt_colonia.Text = "Villa Guerrero";
+            txt_ciudad.Text = "Guadalajara";
+            cboxEstatus.SelectedIndex = 1;
+            pb_imagen.Image = null;
+            strFilePath = "";
+            txt_id_reporte_extravio.Text = "";
+            */
             txt_nombre.Text = "";
             txt_raza.Text = "";
             txt_color.Text = "";
@@ -112,7 +125,7 @@ namespace Splash
             pb_imagen.Image = null;
             strFilePath = "";
             txt_id_reporte_extravio.Text = "";
-            
+
         }
 
         public string AddQuotesIfRequired(string path)
@@ -149,8 +162,8 @@ namespace Splash
                     txt_calle.Text != "")
                 {
                     string insert = "INSERT INTO ReporteExtravio (fecha_perdido, nombre, estado, raza, color, placa, caracteristicas, ciudad, colonia, foto, calle, id_usuario ) values('"
-                    + picker_fecha.Value.Date + "','"
-                    //+ picker_fecha.Value.Date.ToString("yyyyMMdd") + "','"
+                    //+ picker_fecha.Value.Date + "','"
+                    + picker_fecha.Value.Date.ToString("yyyyMMdd") + "','"
                     + txt_nombre.Text + "','"
                     + cboxEstatus.SelectedItem + "','"
                     + txt_raza.Text + "','"
@@ -193,7 +206,6 @@ namespace Splash
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
             buscarPorID();
 
 
@@ -234,7 +246,7 @@ namespace Splash
                         txt_caracteristicas.Text = ResConsul.GetString(7).ToString(); //caracteristicas
                         txt_ciudad.Text = ResConsul.GetString(8).ToString(); //ciudad
                         txt_colonia.Text = ResConsul.GetString(9).ToString(); //colonia
-                        txt_calle.Text = ResConsul.GetString(10).ToString(); //calle
+                        txt_calle.Text = ResConsul.GetString(11).ToString(); //calle
                         pb_imagen.Image = new Bitmap(ResConsul.GetString(10).ToString());
                         
 
@@ -274,7 +286,6 @@ namespace Splash
                 mensaje_error.SetError(txt_id_reporte_extravio, "Capturar Id Reporte Extravío");
                 txt_id_reporte_extravio.Text = "";
                 txt_id_reporte_extravio.Focus();
-
 
             }
             else

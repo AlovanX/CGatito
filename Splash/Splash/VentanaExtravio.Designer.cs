@@ -80,6 +80,7 @@
             this.mensaje_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_path = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
@@ -97,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mensaje_error)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -353,9 +355,9 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(708, 201);
+            this.button1.Location = new System.Drawing.Point(275, 14);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
+            this.button1.Size = new System.Drawing.Size(101, 31);
             this.button1.TabIndex = 16;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
@@ -366,9 +368,9 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(462, 202);
+            this.button2.Location = new System.Drawing.Point(57, 14);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 32);
+            this.button2.Size = new System.Drawing.Size(101, 31);
             this.button2.TabIndex = 17;
             this.button2.Text = "Limpiar";
             this.button2.UseVisualStyleBackColor = false;
@@ -459,9 +461,9 @@
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(705, 244);
+            this.button6.Location = new System.Drawing.Point(275, 64);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 32);
+            this.button6.Size = new System.Drawing.Size(101, 31);
             this.button6.TabIndex = 27;
             this.button6.Text = "Actualizar";
             this.button6.UseVisualStyleBackColor = false;
@@ -472,9 +474,9 @@
             this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(459, 243);
+            this.button7.Location = new System.Drawing.Point(58, 64);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 32);
+            this.button7.Size = new System.Drawing.Size(100, 31);
             this.button7.TabIndex = 28;
             this.button7.Text = "Eliminar";
             this.button7.UseVisualStyleBackColor = false;
@@ -509,7 +511,7 @@
             // 
             // pb_actualizar
             // 
-            this.pb_actualizar.Location = new System.Drawing.Point(665, 244);
+            this.pb_actualizar.Location = new System.Drawing.Point(235, 64);
             this.pb_actualizar.Name = "pb_actualizar";
             this.pb_actualizar.Size = new System.Drawing.Size(34, 31);
             this.pb_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -518,7 +520,7 @@
             // 
             // pb_eliminar
             // 
-            this.pb_eliminar.Location = new System.Drawing.Point(419, 245);
+            this.pb_eliminar.Location = new System.Drawing.Point(17, 64);
             this.pb_eliminar.Name = "pb_eliminar";
             this.pb_eliminar.Size = new System.Drawing.Size(34, 31);
             this.pb_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -527,7 +529,7 @@
             // 
             // pb_guardar
             // 
-            this.pb_guardar.Location = new System.Drawing.Point(665, 203);
+            this.pb_guardar.Location = new System.Drawing.Point(235, 14);
             this.pb_guardar.Name = "pb_guardar";
             this.pb_guardar.Size = new System.Drawing.Size(34, 31);
             this.pb_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -536,7 +538,7 @@
             // 
             // pb_limpiar
             // 
-            this.pb_limpiar.Location = new System.Drawing.Point(422, 203);
+            this.pb_limpiar.Location = new System.Drawing.Point(17, 14);
             this.pb_limpiar.Name = "pb_limpiar";
             this.pb_limpiar.Size = new System.Drawing.Size(34, 31);
             this.pb_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -598,7 +600,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(590, 284);
+            this.pictureBox1.Location = new System.Drawing.Point(765, 287);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(46, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -614,12 +616,28 @@
             this.txt_path.TabIndex = 42;
             this.txt_path.Text = ".";
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.pb_limpiar);
+            this.panel4.Controls.Add(this.pb_eliminar);
+            this.panel4.Controls.Add(this.pb_guardar);
+            this.panel4.Controls.Add(this.pb_actualizar);
+            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.button7);
+            this.panel4.Controls.Add(this.button1);
+            this.panel4.Controls.Add(this.button6);
+            this.panel4.Location = new System.Drawing.Point(420, 178);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(391, 103);
+            this.panel4.TabIndex = 43;
+            // 
             // VentanaExtravio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1155, 605);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.txt_path);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pb_buscar);
@@ -627,15 +645,9 @@
             this.Controls.Add(this.pb_imagen);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.pb_mostrar);
-            this.Controls.Add(this.pb_limpiar);
-            this.Controls.Add(this.pb_guardar);
-            this.Controls.Add(this.pb_eliminar);
-            this.Controls.Add(this.pb_actualizar);
             this.Controls.Add(this.pbHuella3);
             this.Controls.Add(this.pbHuella4);
             this.Controls.Add(this.pbHuella2);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.picker_fecha);
@@ -643,8 +655,6 @@
             this.Controls.Add(this.txt_id_usuario);
             this.Controls.Add(this.txt_id_reporte_extravio);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.panel3);
@@ -673,6 +683,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mensaje_error)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -730,5 +741,6 @@
         private System.Windows.Forms.Label txt_path;
         private System.Windows.Forms.ComboBox cboxEstatus;
         private System.Windows.Forms.ComboBox cboxPlaca;
+        private System.Windows.Forms.Panel panel4;
     }
 }

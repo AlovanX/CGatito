@@ -126,8 +126,8 @@ namespace Splash
                     txt_calle.Text != "")
                 {
                     string insert = "INSERT INTO ReporteEncontrado (fecha_enc, estado, raza, color, placa, caracteristicas, ciudad, colonia, calle, id_usuario, resguardado, foto) values('"
-                    + picker_fecha.Value.Date + "','"
-                    //+ picker_fecha.Value.Date.ToString("yyyyMMdd") + "','"
+                    //+ picker_fecha.Value.Date + "','"
+                    + picker_fecha.Value.Date.ToString("yyyyMMdd") + "','"
                     + cboxEstatus.SelectedItem + "','"
                     + txt_raza.Text + "','"
                     + txt_color.Text + "','"
@@ -179,7 +179,6 @@ namespace Splash
                 mensaje_error.SetError(txt_id_reporte_encontrado, "Ingresar Id Reporte Encontrado");
                 txt_id_reporte_encontrado.Text = "";
                 txt_id_reporte_encontrado.Focus();
-
 
             }
             else

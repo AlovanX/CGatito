@@ -476,7 +476,7 @@
             // 
             // pbHuella3
             // 
-            this.pbHuella3.Location = new System.Drawing.Point(591, 278);
+            this.pbHuella3.Location = new System.Drawing.Point(763, 300);
             this.pbHuella3.Name = "pbHuella3";
             this.pbHuella3.Size = new System.Drawing.Size(46, 39);
             this.pbHuella3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
