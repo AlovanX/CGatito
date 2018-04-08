@@ -128,7 +128,7 @@ namespace Splash
 
                 return reader;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }

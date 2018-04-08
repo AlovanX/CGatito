@@ -74,5 +74,10 @@ namespace Splash
             //Abrir formulario de reportes de encontrado
             new VentanaEncontrado(id_user).Show();
         }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

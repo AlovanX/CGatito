@@ -82,6 +82,10 @@ namespace Splash
 
         }
 
+        private void VentanaEncontrado_Load(object sender, EventArgs e)
+        {
+
+        }
 
         public void limpiar()
 
@@ -318,8 +322,7 @@ namespace Splash
                 mensaje_error.SetError(txt_id_reporte_encontrado, "Capturar Id Reporte Encontrado");
                 txt_id_reporte_encontrado.Text = "";
                 txt_id_reporte_encontrado.Focus();
-
-
+            
             }
             else
             {
@@ -366,5 +369,7 @@ namespace Splash
                 }
             }
         }
+
+        
     }
 }

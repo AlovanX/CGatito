@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaEncontrado));
-            this.pb_buscar = new System.Windows.Forms.PictureBox();
-            this.pbHuella2 = new System.Windows.Forms.PictureBox();
             this.picker_fecha = new System.Windows.Forms.DateTimePicker();
             this.button4 = new System.Windows.Forms.Button();
             this.txt_id_usuario = new System.Windows.Forms.TextBox();
@@ -59,14 +57,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pb_imagen = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
-            this.pb_mostrar = new System.Windows.Forms.PictureBox();
-            this.pb_limpiar = new System.Windows.Forms.PictureBox();
-            this.pb_guardar = new System.Windows.Forms.PictureBox();
-            this.pb_eliminar = new System.Windows.Forms.PictureBox();
-            this.pb_actualizar = new System.Windows.Forms.PictureBox();
-            this.pbHuella3 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -74,48 +65,39 @@
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pb_exit = new System.Windows.Forms.PictureBox();
-            this.pbHuella4 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             this.mensaje_error = new System.Windows.Forms.ErrorProvider(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txt_path = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pb_exit = new System.Windows.Forms.PictureBox();
+            this.pbHuella4 = new System.Windows.Forms.PictureBox();
+            this.pb_mostrar = new System.Windows.Forms.PictureBox();
+            this.pb_limpiar = new System.Windows.Forms.PictureBox();
+            this.pb_guardar = new System.Windows.Forms.PictureBox();
+            this.pb_eliminar = new System.Windows.Forms.PictureBox();
+            this.pb_actualizar = new System.Windows.Forms.PictureBox();
+            this.pbHuella3 = new System.Windows.Forms.PictureBox();
+            this.pb_imagen = new System.Windows.Forms.PictureBox();
+            this.pb_buscar = new System.Windows.Forms.PictureBox();
+            this.pbHuella2 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_imagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mensaje_error)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHuella4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_mostrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_limpiar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_guardar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_eliminar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_actualizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHuella4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mensaje_error)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_imagen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pb_buscar
-            // 
-            this.pb_buscar.Location = new System.Drawing.Point(223, 23);
-            this.pb_buscar.Name = "pb_buscar";
-            this.pb_buscar.Size = new System.Drawing.Size(34, 31);
-            this.pb_buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_buscar.TabIndex = 49;
-            this.pb_buscar.TabStop = false;
-            // 
-            // pbHuella2
-            // 
-            this.pbHuella2.Location = new System.Drawing.Point(10, 8);
-            this.pbHuella2.Name = "pbHuella2";
-            this.pbHuella2.Size = new System.Drawing.Size(46, 39);
-            this.pbHuella2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbHuella2.TabIndex = 48;
-            this.pbHuella2.TabStop = false;
             // 
             // picker_fecha
             // 
@@ -407,15 +389,6 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Estatus:";
             // 
-            // pb_imagen
-            // 
-            this.pb_imagen.Location = new System.Drawing.Point(845, 111);
-            this.pb_imagen.Name = "pb_imagen";
-            this.pb_imagen.Size = new System.Drawing.Size(284, 228);
-            this.pb_imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_imagen.TabIndex = 53;
-            this.pb_imagen.TabStop = false;
-            // 
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
@@ -428,60 +401,6 @@
             this.button8.Text = "Cargar Imagen";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click_1);
-            // 
-            // pb_mostrar
-            // 
-            this.pb_mostrar.Location = new System.Drawing.Point(816, 555);
-            this.pb_mostrar.Name = "pb_mostrar";
-            this.pb_mostrar.Size = new System.Drawing.Size(34, 31);
-            this.pb_mostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_mostrar.TabIndex = 64;
-            this.pb_mostrar.TabStop = false;
-            // 
-            // pb_limpiar
-            // 
-            this.pb_limpiar.Location = new System.Drawing.Point(421, 201);
-            this.pb_limpiar.Name = "pb_limpiar";
-            this.pb_limpiar.Size = new System.Drawing.Size(34, 31);
-            this.pb_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_limpiar.TabIndex = 63;
-            this.pb_limpiar.TabStop = false;
-            // 
-            // pb_guardar
-            // 
-            this.pb_guardar.Location = new System.Drawing.Point(668, 202);
-            this.pb_guardar.Name = "pb_guardar";
-            this.pb_guardar.Size = new System.Drawing.Size(34, 31);
-            this.pb_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_guardar.TabIndex = 62;
-            this.pb_guardar.TabStop = false;
-            // 
-            // pb_eliminar
-            // 
-            this.pb_eliminar.Location = new System.Drawing.Point(418, 248);
-            this.pb_eliminar.Name = "pb_eliminar";
-            this.pb_eliminar.Size = new System.Drawing.Size(34, 31);
-            this.pb_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_eliminar.TabIndex = 61;
-            this.pb_eliminar.TabStop = false;
-            // 
-            // pb_actualizar
-            // 
-            this.pb_actualizar.Location = new System.Drawing.Point(665, 245);
-            this.pb_actualizar.Name = "pb_actualizar";
-            this.pb_actualizar.Size = new System.Drawing.Size(34, 31);
-            this.pb_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_actualizar.TabIndex = 60;
-            this.pb_actualizar.TabStop = false;
-            // 
-            // pbHuella3
-            // 
-            this.pbHuella3.Location = new System.Drawing.Point(763, 300);
-            this.pbHuella3.Name = "pbHuella3";
-            this.pbHuella3.Size = new System.Drawing.Size(46, 39);
-            this.pbHuella3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbHuella3.TabIndex = 59;
-            this.pbHuella3.TabStop = false;
             // 
             // button7
             // 
@@ -566,6 +485,41 @@
             this.panel1.Size = new System.Drawing.Size(1114, 181);
             this.panel1.TabIndex = 65;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(1023, 554);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(101, 32);
+            this.button3.TabIndex = 66;
+            this.button3.Text = "Regresar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
+            // mensaje_error
+            // 
+            this.mensaje_error.ContainerControl = this;
+            // 
+            // txt_path
+            // 
+            this.txt_path.AutoSize = true;
+            this.txt_path.Location = new System.Drawing.Point(845, 50);
+            this.txt_path.Name = "txt_path";
+            this.txt_path.Size = new System.Drawing.Size(10, 13);
+            this.txt_path.TabIndex = 70;
+            this.txt_path.Text = ".";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(1083, 8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 69;
+            this.pictureBox1.TabStop = false;
+            // 
             // pb_exit
             // 
             this.pb_exit.Location = new System.Drawing.Point(983, 555);
@@ -584,40 +538,86 @@
             this.pbHuella4.TabIndex = 67;
             this.pbHuella4.TabStop = false;
             // 
-            // button3
+            // pb_mostrar
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(62)))), ((int)(((byte)(62)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(1023, 554);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 32);
-            this.button3.TabIndex = 66;
-            this.button3.Text = "Regresar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.pb_mostrar.Location = new System.Drawing.Point(816, 555);
+            this.pb_mostrar.Name = "pb_mostrar";
+            this.pb_mostrar.Size = new System.Drawing.Size(34, 31);
+            this.pb_mostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_mostrar.TabIndex = 64;
+            this.pb_mostrar.TabStop = false;
             // 
-            // mensaje_error
+            // pb_limpiar
             // 
-            this.mensaje_error.ContainerControl = this;
+            this.pb_limpiar.Location = new System.Drawing.Point(421, 201);
+            this.pb_limpiar.Name = "pb_limpiar";
+            this.pb_limpiar.Size = new System.Drawing.Size(34, 31);
+            this.pb_limpiar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_limpiar.TabIndex = 63;
+            this.pb_limpiar.TabStop = false;
             // 
-            // pictureBox1
+            // pb_guardar
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(1083, 8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 69;
-            this.pictureBox1.TabStop = false;
+            this.pb_guardar.Location = new System.Drawing.Point(668, 202);
+            this.pb_guardar.Name = "pb_guardar";
+            this.pb_guardar.Size = new System.Drawing.Size(34, 31);
+            this.pb_guardar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_guardar.TabIndex = 62;
+            this.pb_guardar.TabStop = false;
             // 
-            // txt_path
+            // pb_eliminar
             // 
-            this.txt_path.AutoSize = true;
-            this.txt_path.Location = new System.Drawing.Point(845, 50);
-            this.txt_path.Name = "txt_path";
-            this.txt_path.Size = new System.Drawing.Size(10, 13);
-            this.txt_path.TabIndex = 70;
-            this.txt_path.Text = ".";
+            this.pb_eliminar.Location = new System.Drawing.Point(418, 248);
+            this.pb_eliminar.Name = "pb_eliminar";
+            this.pb_eliminar.Size = new System.Drawing.Size(34, 31);
+            this.pb_eliminar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_eliminar.TabIndex = 61;
+            this.pb_eliminar.TabStop = false;
+            // 
+            // pb_actualizar
+            // 
+            this.pb_actualizar.Location = new System.Drawing.Point(665, 245);
+            this.pb_actualizar.Name = "pb_actualizar";
+            this.pb_actualizar.Size = new System.Drawing.Size(34, 31);
+            this.pb_actualizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_actualizar.TabIndex = 60;
+            this.pb_actualizar.TabStop = false;
+            // 
+            // pbHuella3
+            // 
+            this.pbHuella3.Location = new System.Drawing.Point(763, 300);
+            this.pbHuella3.Name = "pbHuella3";
+            this.pbHuella3.Size = new System.Drawing.Size(46, 39);
+            this.pbHuella3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbHuella3.TabIndex = 59;
+            this.pbHuella3.TabStop = false;
+            // 
+            // pb_imagen
+            // 
+            this.pb_imagen.Location = new System.Drawing.Point(845, 111);
+            this.pb_imagen.Name = "pb_imagen";
+            this.pb_imagen.Size = new System.Drawing.Size(284, 228);
+            this.pb_imagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_imagen.TabIndex = 53;
+            this.pb_imagen.TabStop = false;
+            // 
+            // pb_buscar
+            // 
+            this.pb_buscar.Location = new System.Drawing.Point(223, 23);
+            this.pb_buscar.Name = "pb_buscar";
+            this.pb_buscar.Size = new System.Drawing.Size(34, 31);
+            this.pb_buscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_buscar.TabIndex = 49;
+            this.pb_buscar.TabStop = false;
+            // 
+            // pbHuella2
+            // 
+            this.pbHuella2.Location = new System.Drawing.Point(10, 8);
+            this.pbHuella2.Name = "pbHuella2";
+            this.pbHuella2.Size = new System.Drawing.Size(46, 39);
+            this.pbHuella2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbHuella2.TabIndex = 48;
+            this.pbHuella2.TabStop = false;
             // 
             // VentanaEncontrado
             // 
@@ -659,25 +659,26 @@
             this.Name = "VentanaEncontrado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Encontrado";
-            ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).EndInit();
+            this.Load += new System.EventHandler(this.VentanaEncontrado_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_imagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mensaje_error)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHuella4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_mostrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_limpiar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_guardar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_eliminar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_actualizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pb_exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbHuella4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mensaje_error)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_imagen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_buscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbHuella2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

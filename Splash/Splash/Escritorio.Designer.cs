@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pbHuella1 = new System.Windows.Forms.PictureBox();
             this.pbHuella2 = new System.Windows.Forms.PictureBox();
+            this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuellasMain)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbHuella1)).BeginInit();
@@ -51,7 +52,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reporteExtravioToolStripMenuItem,
-            this.reporteEncontradoToolStripMenuItem});
+            this.reporteEncontradoToolStripMenuItem,
+            this.buscarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(598, 24);
@@ -93,7 +95,7 @@
             this.nombreUser.AutoSize = true;
             this.nombreUser.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.nombreUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.nombreUser.Location = new System.Drawing.Point(502, 10);
+            this.nombreUser.Location = new System.Drawing.Point(502, 4);
             this.nombreUser.Name = "nombreUser";
             this.nombreUser.Size = new System.Drawing.Size(52, 17);
             this.nombreUser.TabIndex = 4;
@@ -104,7 +106,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.label2.Location = new System.Drawing.Point(423, 10);
+            this.label2.Location = new System.Drawing.Point(423, 4);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(82, 17);
             this.label2.TabIndex = 5;
@@ -161,6 +163,13 @@
             this.pbHuella2.TabIndex = 21;
             this.pbHuella2.TabStop = false;
             // 
+            // buscarToolStripMenuItem
+            // 
+            this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(102, 20);
+            this.buscarToolStripMenuItem.Text = "Buscar registros";
+            this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
+            // 
             // Escritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,5 +213,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pbHuella1;
         private System.Windows.Forms.PictureBox pbHuella2;
+        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem;
     }
 }
