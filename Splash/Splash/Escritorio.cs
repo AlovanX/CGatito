@@ -77,7 +77,9 @@ namespace Splash
 
         private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmBusqueda buscar = new frmBusqueda(this);
+            buscar.Show();
         }
     }
 }
