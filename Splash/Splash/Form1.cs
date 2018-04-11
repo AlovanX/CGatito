@@ -12,6 +12,7 @@ namespace Splash
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -23,5 +24,6 @@ namespace Splash
             pbHuellas.Image = Image.FromFile(rutaHuellas);
             Console.WriteLine(rutaHuellas);
         }
+
     }
 }

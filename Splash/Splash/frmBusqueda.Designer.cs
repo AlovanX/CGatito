@@ -186,12 +186,13 @@
             this.btnMostrarDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
             this.btnMostrarDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarDetalle.ForeColor = System.Drawing.Color.White;
-            this.btnMostrarDetalle.Location = new System.Drawing.Point(1125, 529);
+            this.btnMostrarDetalle.Location = new System.Drawing.Point(1113, 529);
             this.btnMostrarDetalle.Name = "btnMostrarDetalle";
-            this.btnMostrarDetalle.Size = new System.Drawing.Size(133, 25);
+            this.btnMostrarDetalle.Size = new System.Drawing.Size(145, 25);
             this.btnMostrarDetalle.TabIndex = 14;
-            this.btnMostrarDetalle.Text = "Abrir";
+            this.btnMostrarDetalle.Text = "Generar Reporte";
             this.btnMostrarDetalle.UseVisualStyleBackColor = false;
+            this.btnMostrarDetalle.Click += new System.EventHandler(this.btnMostrarDetalle_Click);
             // 
             // mensaje_error
             // 

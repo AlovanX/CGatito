@@ -16,7 +16,7 @@ namespace Splash
     public partial class Form2 : Form
     {
         Usuario us = new Usuario();
-        
+
         public Form2()
         {
             InitializeComponent();
@@ -28,18 +28,18 @@ namespace Splash
             //Hilo para iniciar splashscreen
             Thread hilo = new Thread(mostrarSplash);
             hilo.Start();
-            Thread.Sleep(2000);
+            Thread.Sleep(3000);
             hilo.Abort();
 
+            this.Show();
             txtCorreo.Focus();
-
         }
 
         void mostrarSplash()
         {
+            this.Hide();
             Form1 sps = new Form1();
             sps.ShowDialog();
-
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -147,6 +147,7 @@ namespace Splash
                 teclaEnter();
             }
         }
+
     }
     
 }

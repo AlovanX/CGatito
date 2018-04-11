@@ -16,6 +16,7 @@ namespace Splash
         Perro perro = new Perro();
         Escritorio desk;
         Conexion con;
+        frmReporte repo;
 
         string tabla = null;
         string query = null;
@@ -270,6 +271,14 @@ namespace Splash
             {
                 BusquedaParametrizada();
             }
+        }
+
+        private void btnMostrarDetalle_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            repo = new frmReporte(this);
+            repo.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            repo.ShowDialog();
         }
     }
 }

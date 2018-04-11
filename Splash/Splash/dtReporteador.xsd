@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dtReporteador" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dtReporteador" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dtReporteador" msprop:Generator_UserDSName="dtReporteador">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTExtraviado" msprop:Generator_TableClassName="DTExtraviadoDataTable" msprop:Generator_TableVarName="tableDTExtraviado" msprop:Generator_RowChangedName="DTExtraviadoRowChanged" msprop:Generator_TablePropName="DTExtraviado" msprop:Generator_RowDeletingName="DTExtraviadoRowDeleting" msprop:Generator_RowChangingName="DTExtraviadoRowChanging" msprop:Generator_RowEvHandlerName="DTExtraviadoRowChangeEventHandler" msprop:Generator_RowDeletedName="DTExtraviadoRowDeleted" msprop:Generator_RowClassName="DTExtraviadoRow" msprop:Generator_UserTableName="DTExtraviado" msprop:Generator_RowEvArgName="DTExtraviadoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha_perdido" msprop:Generator_ColumnVarNameInTable="columnfecha_perdido" msprop:Generator_ColumnPropNameInRow="fecha_perdido" msprop:Generator_ColumnPropNameInTable="fecha_perdidoColumn" msprop:Generator_UserColumnName="fecha_perdido" type="xs:dateTime" />
+              <xs:element name="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_UserColumnName="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="raza" msprop:Generator_ColumnVarNameInTable="columnraza" msprop:Generator_ColumnPropNameInRow="raza" msprop:Generator_ColumnPropNameInTable="razaColumn" msprop:Generator_UserColumnName="raza" type="xs:string" minOccurs="0" />
+              <xs:element name="placa" msprop:Generator_ColumnVarNameInTable="columnplaca" msprop:Generator_ColumnPropNameInRow="placa" msprop:Generator_ColumnPropNameInTable="placaColumn" msprop:Generator_UserColumnName="placa" type="xs:string" minOccurs="0" />
+              <xs:element name="ciudad" msprop:Generator_ColumnVarNameInTable="columnciudad" msprop:Generator_ColumnPropNameInRow="ciudad" msprop:Generator_ColumnPropNameInTable="ciudadColumn" msprop:Generator_UserColumnName="ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="foto" msprop:Generator_ColumnVarNameInTable="columnfoto" msprop:Generator_ColumnPropNameInRow="foto" msprop:Generator_ColumnPropNameInTable="fotoColumn" msprop:Generator_UserColumnName="foto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DTEncontrado" msprop:Generator_TableClassName="DTEncontradoDataTable" msprop:Generator_TableVarName="tableDTEncontrado" msprop:Generator_TablePropName="DTEncontrado" msprop:Generator_RowDeletingName="DTEncontradoRowDeleting" msprop:Generator_RowChangingName="DTEncontradoRowChanging" msprop:Generator_RowEvHandlerName="DTEncontradoRowChangeEventHandler" msprop:Generator_RowDeletedName="DTEncontradoRowDeleted" msprop:Generator_UserTableName="DTEncontrado" msprop:Generator_RowChangedName="DTEncontradoRowChanged" msprop:Generator_RowEvArgName="DTEncontradoRowChangeEvent" msprop:Generator_RowClassName="DTEncontradoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="fecha_enc" msdata:Caption="fecha_perdido" msprop:Generator_ColumnVarNameInTable="columnfecha_enc" msprop:Generator_ColumnPropNameInRow="fecha_enc" msprop:Generator_ColumnPropNameInTable="fecha_encColumn" msprop:Generator_UserColumnName="fecha_enc" type="xs:dateTime" />
+              <xs:element name="estado" msprop:Generator_ColumnVarNameInTable="columnestado" msprop:Generator_ColumnPropNameInRow="estado" msprop:Generator_ColumnPropNameInTable="estadoColumn" msprop:Generator_UserColumnName="estado" type="xs:string" minOccurs="0" />
+              <xs:element name="raza" msprop:Generator_ColumnVarNameInTable="columnraza" msprop:Generator_ColumnPropNameInRow="raza" msprop:Generator_ColumnPropNameInTable="razaColumn" msprop:Generator_UserColumnName="raza" type="xs:string" minOccurs="0" />
+              <xs:element name="placa" msprop:Generator_ColumnVarNameInTable="columnplaca" msprop:Generator_ColumnPropNameInRow="placa" msprop:Generator_ColumnPropNameInTable="placaColumn" msprop:Generator_UserColumnName="placa" type="xs:string" minOccurs="0" />
+              <xs:element name="ciudad" msprop:Generator_ColumnVarNameInTable="columnciudad" msprop:Generator_ColumnPropNameInRow="ciudad" msprop:Generator_ColumnPropNameInTable="ciudadColumn" msprop:Generator_UserColumnName="ciudad" type="xs:string" minOccurs="0" />
+              <xs:element name="foto" msprop:Generator_ColumnVarNameInTable="columnfoto" msprop:Generator_ColumnPropNameInRow="foto" msprop:Generator_ColumnPropNameInTable="fotoColumn" msprop:Generator_UserColumnName="foto" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
