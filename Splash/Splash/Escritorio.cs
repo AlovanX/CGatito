@@ -18,7 +18,7 @@ namespace Splash
         //variable global para almacenar id de usuario logeado
         string id_user;
         private bool Cerrar = false;
-        frmReporte repo;
+        s repo;
         
         public Escritorio(string id_user_p, string nombre_user_p)
         {
@@ -86,8 +86,7 @@ namespace Splash
         private void reportesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            repo = new frmReporte(this);
-            repo.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            repo = new s(this);
             repo.ShowDialog();
         }
     }

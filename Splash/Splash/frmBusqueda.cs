@@ -275,10 +275,7 @@ namespace Splash
 
         private void btnMostrarDetalle_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            repo = new frmReporte(this);
-            repo.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            repo.ShowDialog();
+            
         }
     }
 }

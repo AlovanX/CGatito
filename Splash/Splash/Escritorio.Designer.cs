@@ -35,11 +35,11 @@
             this.reporteEncontradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nombreUser = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pbHuella2 = new System.Windows.Forms.PictureBox();
             this.pbHuella1 = new System.Windows.Forms.PictureBox();
             this.pbHuellasMain = new System.Windows.Forms.PictureBox();
@@ -99,6 +99,13 @@
             this.buscarToolStripMenuItem.Text = "Buscar registros";
             this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
+            // 
             // nombreUser
             // 
             this.nombreUser.AutoSize = true;
@@ -127,7 +134,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(442, 153);
+            this.label6.Location = new System.Drawing.Point(439, 153);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(113, 45);
             this.label6.TabIndex = 15;
@@ -139,18 +146,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(167, 153);
+            this.label3.Location = new System.Drawing.Point(164, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(155, 45);
             this.label3.TabIndex = 13;
             this.label3.Text = "Encontra";
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.reportesToolStripMenuItem.Text = "Reportes";
-            this.reportesToolStripMenuItem.Click += new System.EventHandler(this.reportesToolStripMenuItem_Click);
             // 
             // pbHuella2
             // 
@@ -163,7 +163,7 @@
             // 
             // pbHuella1
             // 
-            this.pbHuella1.Location = new System.Drawing.Point(628, 234);
+            this.pbHuella1.Location = new System.Drawing.Point(628, 223);
             this.pbHuella1.Name = "pbHuella1";
             this.pbHuella1.Size = new System.Drawing.Size(46, 39);
             this.pbHuella1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +172,7 @@
             // 
             // pbHuellasMain
             // 
-            this.pbHuellasMain.Location = new System.Drawing.Point(319, 120);
+            this.pbHuellasMain.Location = new System.Drawing.Point(316, 120);
             this.pbHuellasMain.Name = "pbHuellasMain";
             this.pbHuellasMain.Size = new System.Drawing.Size(121, 78);
             this.pbHuellasMain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

@@ -12,33 +12,36 @@ namespace Splash
 {
     public partial class frmReporte : Form
     {
-        Escritorio m;
-        frmBusqueda finder;
-        byte arrancador;
-        public frmReporte(Escritorio m)
+
+        public frmReporte(DataTable dt, int opcion)
         {
             InitializeComponent();
-            this.m  = m;
-            arrancador = 1;
+
+            switch (opcion)
+            {
+                case 0:
+                    rptReporteExtravios repo = new rptReporteExtravios();
+                    repo.SetDataSource(dt);
+                    CrViewer.ReportSource = repo;
+                    break;
+                case 1:
+                    rptReporteEncontrados repo1 = new rptReporteEncontrados();
+                    repo1.SetDataSource(dt);
+                    CrViewer.ReportSource = repo1;
+                    break;
+                default:
+                    break;
+            }
+
         }
-        public frmReporte(frmBusqueda find)
-        {
-            InitializeComponent();
-            this.finder = find;
-            arrancador = 2;
-        }
+
 
         private void frmReporte_FormClosing(object sender, FormClosingEventArgs e)
         {
-            switch (arrancador)
-            {
-                case 1:
-                    m.Show();
-                    break;
-                case 2:
-                    finder.Show();
-                    break;
-            }
+
         }
+
+
+
     }
 }

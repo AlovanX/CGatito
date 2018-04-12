@@ -26,8 +26,6 @@ namespace Splash {
         
         private DTExtraviadoDataTable tableDTExtraviado;
         
-        private DTEncontradoDataTable tableDTEncontrado;
-        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -59,9 +57,6 @@ namespace Splash {
                 if ((ds.Tables["DTExtraviado"] != null)) {
                     base.Tables.Add(new DTExtraviadoDataTable(ds.Tables["DTExtraviado"]));
                 }
-                if ((ds.Tables["DTEncontrado"] != null)) {
-                    base.Tables.Add(new DTEncontradoDataTable(ds.Tables["DTEncontrado"]));
-                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -87,16 +82,6 @@ namespace Splash {
         public DTExtraviadoDataTable DTExtraviado {
             get {
                 return this.tableDTExtraviado;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        [global::System.ComponentModel.Browsable(false)]
-        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DTEncontradoDataTable DTEncontrado {
-            get {
-                return this.tableDTEncontrado;
             }
         }
         
@@ -170,9 +155,6 @@ namespace Splash {
                 if ((ds.Tables["DTExtraviado"] != null)) {
                     base.Tables.Add(new DTExtraviadoDataTable(ds.Tables["DTExtraviado"]));
                 }
-                if ((ds.Tables["DTEncontrado"] != null)) {
-                    base.Tables.Add(new DTEncontradoDataTable(ds.Tables["DTEncontrado"]));
-                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -212,12 +194,6 @@ namespace Splash {
                     this.tableDTExtraviado.InitVars();
                 }
             }
-            this.tableDTEncontrado = ((DTEncontradoDataTable)(base.Tables["DTEncontrado"]));
-            if ((initTable == true)) {
-                if ((this.tableDTEncontrado != null)) {
-                    this.tableDTEncontrado.InitVars();
-                }
-            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -230,19 +206,11 @@ namespace Splash {
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tableDTExtraviado = new DTExtraviadoDataTable();
             base.Tables.Add(this.tableDTExtraviado);
-            this.tableDTEncontrado = new DTEncontradoDataTable();
-            base.Tables.Add(this.tableDTEncontrado);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         private bool ShouldSerializeDTExtraviado() {
-            return false;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        private bool ShouldSerializeDTEncontrado() {
             return false;
         }
         
@@ -304,9 +272,6 @@ namespace Splash {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
         public delegate void DTExtraviadoRowChangeEventHandler(object sender, DTExtraviadoRowChangeEvent e);
         
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public delegate void DTEncontradoRowChangeEventHandler(object sender, DTEncontradoRowChangeEvent e);
-        
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
@@ -314,17 +279,19 @@ namespace Splash {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DTExtraviadoDataTable : global::System.Data.TypedTableBase<DTExtraviadoRow> {
             
-            private global::System.Data.DataColumn columnfecha_perdido;
+            private global::System.Data.DataColumn columnFecha;
             
-            private global::System.Data.DataColumn columnestado;
+            private global::System.Data.DataColumn columnEstado;
             
-            private global::System.Data.DataColumn columnraza;
+            private global::System.Data.DataColumn columnRaza;
             
-            private global::System.Data.DataColumn columnplaca;
+            private global::System.Data.DataColumn columnPlaca;
             
-            private global::System.Data.DataColumn columnciudad;
+            private global::System.Data.DataColumn columnCiudad;
             
-            private global::System.Data.DataColumn columnfoto;
+            private global::System.Data.DataColumn columnFoto;
+            
+            private global::System.Data.DataColumn columnID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
@@ -361,49 +328,57 @@ namespace Splash {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn fecha_perdidoColumn {
+            public global::System.Data.DataColumn FechaColumn {
                 get {
-                    return this.columnfecha_perdido;
+                    return this.columnFecha;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn estadoColumn {
+            public global::System.Data.DataColumn EstadoColumn {
                 get {
-                    return this.columnestado;
+                    return this.columnEstado;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn razaColumn {
+            public global::System.Data.DataColumn RazaColumn {
                 get {
-                    return this.columnraza;
+                    return this.columnRaza;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn placaColumn {
+            public global::System.Data.DataColumn PlacaColumn {
                 get {
-                    return this.columnplaca;
+                    return this.columnPlaca;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ciudadColumn {
+            public global::System.Data.DataColumn CiudadColumn {
                 get {
-                    return this.columnciudad;
+                    return this.columnCiudad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn fotoColumn {
+            public global::System.Data.DataColumn FotoColumn {
                 get {
-                    return this.columnfoto;
+                    return this.columnFoto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
                 }
             }
             
@@ -444,15 +419,16 @@ namespace Splash {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTExtraviadoRow AddDTExtraviadoRow(System.DateTime fecha_perdido, string estado, string raza, string placa, string ciudad, string foto) {
+            public DTExtraviadoRow AddDTExtraviadoRow(System.DateTime Fecha, string Estado, string Raza, string Placa, string Ciudad, string Foto, int ID) {
                 DTExtraviadoRow rowDTExtraviadoRow = ((DTExtraviadoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        fecha_perdido,
-                        estado,
-                        raza,
-                        placa,
-                        ciudad,
-                        foto};
+                        Fecha,
+                        Estado,
+                        Raza,
+                        Placa,
+                        Ciudad,
+                        Foto,
+                        ID};
                 rowDTExtraviadoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDTExtraviadoRow);
                 return rowDTExtraviadoRow;
@@ -475,30 +451,33 @@ namespace Splash {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             internal void InitVars() {
-                this.columnfecha_perdido = base.Columns["fecha_perdido"];
-                this.columnestado = base.Columns["estado"];
-                this.columnraza = base.Columns["raza"];
-                this.columnplaca = base.Columns["placa"];
-                this.columnciudad = base.Columns["ciudad"];
-                this.columnfoto = base.Columns["foto"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnEstado = base.Columns["Estado"];
+                this.columnRaza = base.Columns["Raza"];
+                this.columnPlaca = base.Columns["Placa"];
+                this.columnCiudad = base.Columns["Ciudad"];
+                this.columnFoto = base.Columns["Foto"];
+                this.columnID = base.Columns["ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             private void InitClass() {
-                this.columnfecha_perdido = new global::System.Data.DataColumn("fecha_perdido", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfecha_perdido);
-                this.columnestado = new global::System.Data.DataColumn("estado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnestado);
-                this.columnraza = new global::System.Data.DataColumn("raza", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnraza);
-                this.columnplaca = new global::System.Data.DataColumn("placa", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnplaca);
-                this.columnciudad = new global::System.Data.DataColumn("ciudad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnciudad);
-                this.columnfoto = new global::System.Data.DataColumn("foto", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfoto);
-                this.columnfecha_perdido.AllowDBNull = false;
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnEstado = new global::System.Data.DataColumn("Estado", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstado);
+                this.columnRaza = new global::System.Data.DataColumn("Raza", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRaza);
+                this.columnPlaca = new global::System.Data.DataColumn("Placa", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlaca);
+                this.columnCiudad = new global::System.Data.DataColumn("Ciudad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCiudad);
+                this.columnFoto = new global::System.Data.DataColumn("Foto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFoto);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.columnFecha.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -626,325 +605,6 @@ namespace Splash {
         }
         
         /// <summary>
-        ///Represents the strongly named DataTable class.
-        ///</summary>
-        [global::System.Serializable()]
-        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DTEncontradoDataTable : global::System.Data.TypedTableBase<DTEncontradoRow> {
-            
-            private global::System.Data.DataColumn columnfecha_enc;
-            
-            private global::System.Data.DataColumn columnestado;
-            
-            private global::System.Data.DataColumn columnraza;
-            
-            private global::System.Data.DataColumn columnplaca;
-            
-            private global::System.Data.DataColumn columnciudad;
-            
-            private global::System.Data.DataColumn columnfoto;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTEncontradoDataTable() {
-                this.TableName = "DTEncontrado";
-                this.BeginInit();
-                this.InitClass();
-                this.EndInit();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal DTEncontradoDataTable(global::System.Data.DataTable table) {
-                this.TableName = table.TableName;
-                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
-                    this.CaseSensitive = table.CaseSensitive;
-                }
-                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
-                    this.Locale = table.Locale;
-                }
-                if ((table.Namespace != table.DataSet.Namespace)) {
-                    this.Namespace = table.Namespace;
-                }
-                this.Prefix = table.Prefix;
-                this.MinimumCapacity = table.MinimumCapacity;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected DTEncontradoDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
-                    base(info, context) {
-                this.InitVars();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn fecha_encColumn {
-                get {
-                    return this.columnfecha_enc;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn estadoColumn {
-                get {
-                    return this.columnestado;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn razaColumn {
-                get {
-                    return this.columnraza;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn placaColumn {
-                get {
-                    return this.columnplaca;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn ciudadColumn {
-                get {
-                    return this.columnciudad;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataColumn fotoColumn {
-                get {
-                    return this.columnfoto;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            [global::System.ComponentModel.Browsable(false)]
-            public int Count {
-                get {
-                    return this.Rows.Count;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTEncontradoRow this[int index] {
-                get {
-                    return ((DTEncontradoRow)(this.Rows[index]));
-                }
-            }
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DTEncontradoRowChangeEventHandler DTEncontradoRowChanging;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DTEncontradoRowChangeEventHandler DTEncontradoRowChanged;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DTEncontradoRowChangeEventHandler DTEncontradoRowDeleting;
-            
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public event DTEncontradoRowChangeEventHandler DTEncontradoRowDeleted;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void AddDTEncontradoRow(DTEncontradoRow row) {
-                this.Rows.Add(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTEncontradoRow AddDTEncontradoRow(System.DateTime fecha_enc, string estado, string raza, string placa, string ciudad, string foto) {
-                DTEncontradoRow rowDTEncontradoRow = ((DTEncontradoRow)(this.NewRow()));
-                object[] columnValuesArray = new object[] {
-                        fecha_enc,
-                        estado,
-                        raza,
-                        placa,
-                        ciudad,
-                        foto};
-                rowDTEncontradoRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDTEncontradoRow);
-                return rowDTEncontradoRow;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public override global::System.Data.DataTable Clone() {
-                DTEncontradoDataTable cln = ((DTEncontradoDataTable)(base.Clone()));
-                cln.InitVars();
-                return cln;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataTable CreateInstance() {
-                return new DTEncontradoDataTable();
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal void InitVars() {
-                this.columnfecha_enc = base.Columns["fecha_enc"];
-                this.columnestado = base.Columns["estado"];
-                this.columnraza = base.Columns["raza"];
-                this.columnplaca = base.Columns["placa"];
-                this.columnciudad = base.Columns["ciudad"];
-                this.columnfoto = base.Columns["foto"];
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            private void InitClass() {
-                this.columnfecha_enc = new global::System.Data.DataColumn("fecha_enc", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfecha_enc);
-                this.columnestado = new global::System.Data.DataColumn("estado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnestado);
-                this.columnraza = new global::System.Data.DataColumn("raza", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnraza);
-                this.columnplaca = new global::System.Data.DataColumn("placa", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnplaca);
-                this.columnciudad = new global::System.Data.DataColumn("ciudad", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnciudad);
-                this.columnfoto = new global::System.Data.DataColumn("foto", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnfoto);
-                this.columnfecha_enc.AllowDBNull = false;
-                this.columnfecha_enc.Caption = "fecha_perdido";
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTEncontradoRow NewDTEncontradoRow() {
-                return ((DTEncontradoRow)(this.NewRow()));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DTEncontradoRow(builder);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override global::System.Type GetRowType() {
-                return typeof(DTEncontradoRow);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanged(e);
-                if ((this.DTEncontradoRowChanged != null)) {
-                    this.DTEncontradoRowChanged(this, new DTEncontradoRowChangeEvent(((DTEncontradoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowChanging(e);
-                if ((this.DTEncontradoRowChanging != null)) {
-                    this.DTEncontradoRowChanging(this, new DTEncontradoRowChangeEvent(((DTEncontradoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleted(e);
-                if ((this.DTEncontradoRowDeleted != null)) {
-                    this.DTEncontradoRowDeleted(this, new DTEncontradoRowChangeEvent(((DTEncontradoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
-                base.OnRowDeleting(e);
-                if ((this.DTEncontradoRowDeleting != null)) {
-                    this.DTEncontradoRowDeleting(this, new DTEncontradoRowChangeEvent(((DTEncontradoRow)(e.Row)), e.Action));
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void RemoveDTEncontradoRow(DTEncontradoRow row) {
-                this.Rows.Remove(row);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
-                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                dtReporteador ds = new dtReporteador();
-                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
-                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
-                any1.MinOccurs = new decimal(0);
-                any1.MaxOccurs = decimal.MaxValue;
-                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any1);
-                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
-                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
-                any2.MinOccurs = new decimal(1);
-                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
-                sequence.Items.Add(any2);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute1.Name = "namespace";
-                attribute1.FixedValue = ds.Namespace;
-                type.Attributes.Add(attribute1);
-                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
-                attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DTEncontradoDataTable";
-                type.Attributes.Add(attribute2);
-                type.Particle = sequence;
-                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
-                if (xs.Contains(dsSchema.TargetNamespace)) {
-                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
-                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
-                    try {
-                        global::System.Xml.Schema.XmlSchema schema = null;
-                        dsSchema.Write(s1);
-                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
-                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
-                            s2.SetLength(0);
-                            schema.Write(s2);
-                            if ((s1.Length == s2.Length)) {
-                                s1.Position = 0;
-                                s2.Position = 0;
-                                for (; ((s1.Position != s1.Length) 
-                                            && (s1.ReadByte() == s2.ReadByte())); ) {
-                                    ;
-                                }
-                                if ((s1.Position == s1.Length)) {
-                                    return type;
-                                }
-                            }
-                        }
-                    }
-                    finally {
-                        if ((s1 != null)) {
-                            s1.Close();
-                        }
-                        if ((s2 != null)) {
-                            s2.Close();
-                        }
-                    }
-                }
-                xs.Add(dsSchema);
-                return type;
-            }
-        }
-        
-        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class DTExtraviadoRow : global::System.Data.DataRow {
@@ -960,319 +620,181 @@ namespace Splash {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime fecha_perdido {
+            public System.DateTime Fecha {
                 get {
-                    return ((global::System.DateTime)(this[this.tableDTExtraviado.fecha_perdidoColumn]));
+                    return ((global::System.DateTime)(this[this.tableDTExtraviado.FechaColumn]));
                 }
                 set {
-                    this[this.tableDTExtraviado.fecha_perdidoColumn] = value;
+                    this[this.tableDTExtraviado.FechaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string estado {
-                get {
-                    try {
-                        return ((string)(this[this.tableDTExtraviado.estadoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'estado\' de la tabla \'DTExtraviado\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDTExtraviado.estadoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string raza {
+            public string Estado {
                 get {
                     try {
-                        return ((string)(this[this.tableDTExtraviado.razaColumn]));
+                        return ((string)(this[this.tableDTExtraviado.EstadoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'raza\' de la tabla \'DTExtraviado\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Estado\' de la tabla \'DTExtraviado\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTExtraviado.razaColumn] = value;
+                    this[this.tableDTExtraviado.EstadoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string placa {
+            public string Raza {
                 get {
                     try {
-                        return ((string)(this[this.tableDTExtraviado.placaColumn]));
+                        return ((string)(this[this.tableDTExtraviado.RazaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'placa\' de la tabla \'DTExtraviado\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Raza\' de la tabla \'DTExtraviado\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTExtraviado.placaColumn] = value;
+                    this[this.tableDTExtraviado.RazaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string ciudad {
+            public string Placa {
                 get {
                     try {
-                        return ((string)(this[this.tableDTExtraviado.ciudadColumn]));
+                        return ((string)(this[this.tableDTExtraviado.PlacaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ciudad\' de la tabla \'DTExtraviado\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Placa\' de la tabla \'DTExtraviado\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTExtraviado.ciudadColumn] = value;
+                    this[this.tableDTExtraviado.PlacaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string foto {
+            public string Ciudad {
                 get {
                     try {
-                        return ((string)(this[this.tableDTExtraviado.fotoColumn]));
+                        return ((string)(this[this.tableDTExtraviado.CiudadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'foto\' de la tabla \'DTExtraviado\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ciudad\' de la tabla \'DTExtraviado\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTExtraviado.fotoColumn] = value;
+                    this[this.tableDTExtraviado.CiudadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsestadoNull() {
-                return this.IsNull(this.tableDTExtraviado.estadoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetestadoNull() {
-                this[this.tableDTExtraviado.estadoColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsrazaNull() {
-                return this.IsNull(this.tableDTExtraviado.razaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetrazaNull() {
-                this[this.tableDTExtraviado.razaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsplacaNull() {
-                return this.IsNull(this.tableDTExtraviado.placaColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetplacaNull() {
-                this[this.tableDTExtraviado.placaColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsciudadNull() {
-                return this.IsNull(this.tableDTExtraviado.ciudadColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetciudadNull() {
-                this[this.tableDTExtraviado.ciudadColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsfotoNull() {
-                return this.IsNull(this.tableDTExtraviado.fotoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetfotoNull() {
-                this[this.tableDTExtraviado.fotoColumn] = global::System.Convert.DBNull;
-            }
-        }
-        
-        /// <summary>
-        ///Represents strongly named DataRow class.
-        ///</summary>
-        public partial class DTEncontradoRow : global::System.Data.DataRow {
-            
-            private DTEncontradoDataTable tableDTEncontrado;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            internal DTEncontradoRow(global::System.Data.DataRowBuilder rb) : 
-                    base(rb) {
-                this.tableDTEncontrado = ((DTEncontradoDataTable)(this.Table));
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public System.DateTime fecha_enc {
-                get {
-                    return ((global::System.DateTime)(this[this.tableDTEncontrado.fecha_encColumn]));
-                }
-                set {
-                    this[this.tableDTEncontrado.fecha_encColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string estado {
+            public string Foto {
                 get {
                     try {
-                        return ((string)(this[this.tableDTEncontrado.estadoColumn]));
+                        return ((string)(this[this.tableDTExtraviado.FotoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'estado\' de la tabla \'DTEncontrado\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Foto\' de la tabla \'DTExtraviado\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTEncontrado.estadoColumn] = value;
+                    this[this.tableDTExtraviado.FotoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string raza {
+            public int ID {
                 get {
                     try {
-                        return ((string)(this[this.tableDTEncontrado.razaColumn]));
+                        return ((int)(this[this.tableDTExtraviado.IDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'raza\' de la tabla \'DTEncontrado\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ID\' de la tabla \'DTExtraviado\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTEncontrado.razaColumn] = value;
+                    this[this.tableDTExtraviado.IDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string placa {
-                get {
-                    try {
-                        return ((string)(this[this.tableDTEncontrado.placaColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'placa\' de la tabla \'DTEncontrado\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDTEncontrado.placaColumn] = value;
-                }
+            public bool IsEstadoNull() {
+                return this.IsNull(this.tableDTExtraviado.EstadoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string ciudad {
-                get {
-                    try {
-                        return ((string)(this[this.tableDTEncontrado.ciudadColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ciudad\' de la tabla \'DTEncontrado\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDTEncontrado.ciudadColumn] = value;
-                }
+            public void SetEstadoNull() {
+                this[this.tableDTExtraviado.EstadoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public string foto {
-                get {
-                    try {
-                        return ((string)(this[this.tableDTEncontrado.fotoColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'foto\' de la tabla \'DTEncontrado\' es DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableDTEncontrado.fotoColumn] = value;
-                }
+            public bool IsRazaNull() {
+                return this.IsNull(this.tableDTExtraviado.RazaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsestadoNull() {
-                return this.IsNull(this.tableDTEncontrado.estadoColumn);
+            public void SetRazaNull() {
+                this[this.tableDTExtraviado.RazaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetestadoNull() {
-                this[this.tableDTEncontrado.estadoColumn] = global::System.Convert.DBNull;
+            public bool IsPlacaNull() {
+                return this.IsNull(this.tableDTExtraviado.PlacaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsrazaNull() {
-                return this.IsNull(this.tableDTEncontrado.razaColumn);
+            public void SetPlacaNull() {
+                this[this.tableDTExtraviado.PlacaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetrazaNull() {
-                this[this.tableDTEncontrado.razaColumn] = global::System.Convert.DBNull;
+            public bool IsCiudadNull() {
+                return this.IsNull(this.tableDTExtraviado.CiudadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsplacaNull() {
-                return this.IsNull(this.tableDTEncontrado.placaColumn);
+            public void SetCiudadNull() {
+                this[this.tableDTExtraviado.CiudadColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetplacaNull() {
-                this[this.tableDTEncontrado.placaColumn] = global::System.Convert.DBNull;
+            public bool IsFotoNull() {
+                return this.IsNull(this.tableDTExtraviado.FotoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsciudadNull() {
-                return this.IsNull(this.tableDTEncontrado.ciudadColumn);
+            public void SetFotoNull() {
+                this[this.tableDTExtraviado.FotoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetciudadNull() {
-                this[this.tableDTEncontrado.ciudadColumn] = global::System.Convert.DBNull;
+            public bool IsIDNull() {
+                return this.IsNull(this.tableDTExtraviado.IDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public bool IsfotoNull() {
-                return this.IsNull(this.tableDTEncontrado.fotoColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public void SetfotoNull() {
-                this[this.tableDTEncontrado.fotoColumn] = global::System.Convert.DBNull;
+            public void SetIDNull() {
+                this[this.tableDTExtraviado.IDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1296,40 +818,6 @@ namespace Splash {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public DTExtraviadoRow Row {
-                get {
-                    return this.eventRow;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public global::System.Data.DataRowAction Action {
-                get {
-                    return this.eventAction;
-                }
-            }
-        }
-        
-        /// <summary>
-        ///Row event argument class
-        ///</summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-        public class DTEncontradoRowChangeEvent : global::System.EventArgs {
-            
-            private DTEncontradoRow eventRow;
-            
-            private global::System.Data.DataRowAction eventAction;
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTEncontradoRowChangeEvent(DTEncontradoRow row, global::System.Data.DataRowAction action) {
-                this.eventRow = row;
-                this.eventAction = action;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public DTEncontradoRow Row {
                 get {
                     return this.eventRow;
                 }

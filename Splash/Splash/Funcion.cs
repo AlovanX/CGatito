@@ -16,8 +16,6 @@ namespace Splash
 
         //Método para consultas
         DataSet Consulta(string tabla, string campo);
-
-
     }
 }
 

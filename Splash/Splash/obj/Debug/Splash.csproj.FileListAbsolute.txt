@@ -60,3 +60,4 @@ D:\Users\alovan\source\repos\CGatito\Splash\Splash\bin\Debug\ShockwaveFlashObjec
 D:\Users\alovan\source\repos\CGatito\Splash\Splash\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Users\alovan\source\repos\CGatito\Splash\Splash\bin\Debug\stdole.dll
 D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.frmReporte.resources
+D:\Users\alovan\source\repos\CGatito\Splash\Splash\obj\Debug\Splash.s.resources
