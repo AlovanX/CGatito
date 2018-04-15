@@ -16,6 +16,7 @@ namespace Splash
         Perro p;
         dtReporteador dtRepo;
         int tipoReporte = -1;
+        
 
         public s(Escritorio desk)
         {
@@ -24,11 +25,13 @@ namespace Splash
             this.desk = desk;
             gbTipoReporte.Controls.Add(rbtnEncontrado);
             gbTipoReporte.Controls.Add(rbtnExtravio);
+        }
 
-
-            
-
-            
+        public s()
+        {
+            InitializeComponent();
+            gbTipoReporte.Controls.Add(rbtnEncontrado);
+            gbTipoReporte.Controls.Add(rbtnExtravio);
         }
 
         private void s_FormClosing(object sender, FormClosingEventArgs e)

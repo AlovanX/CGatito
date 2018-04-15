@@ -17,6 +17,7 @@ namespace Splash
         Escritorio desk;
         Conexion con;
         frmReporte repo;
+        
 
         string tabla = null;
         string query = null;
