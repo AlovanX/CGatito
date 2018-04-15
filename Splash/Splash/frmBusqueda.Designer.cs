@@ -41,7 +41,6 @@
             this.CmbListaBusqueda = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.datagridBusqueda = new System.Windows.Forms.DataGridView();
-            this.btnMostrarDetalle = new System.Windows.Forms.Button();
             this.mensaje_error = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagridBusqueda)).BeginInit();
@@ -181,19 +180,6 @@
             this.datagridBusqueda.Size = new System.Drawing.Size(1246, 473);
             this.datagridBusqueda.TabIndex = 1;
             // 
-            // btnMostrarDetalle
-            // 
-            this.btnMostrarDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(65)))), ((int)(((byte)(65)))));
-            this.btnMostrarDetalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMostrarDetalle.ForeColor = System.Drawing.Color.White;
-            this.btnMostrarDetalle.Location = new System.Drawing.Point(1113, 529);
-            this.btnMostrarDetalle.Name = "btnMostrarDetalle";
-            this.btnMostrarDetalle.Size = new System.Drawing.Size(145, 25);
-            this.btnMostrarDetalle.TabIndex = 14;
-            this.btnMostrarDetalle.Text = "Generar Reporte";
-            this.btnMostrarDetalle.UseVisualStyleBackColor = false;
-            this.btnMostrarDetalle.Click += new System.EventHandler(this.btnMostrarDetalle_Click);
-            // 
             // mensaje_error
             // 
             this.mensaje_error.ContainerControl = this;
@@ -204,7 +190,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1269, 566);
-            this.Controls.Add(this.btnMostrarDetalle);
             this.Controls.Add(this.datagridBusqueda);
             this.Controls.Add(this.panel1);
             this.Name = "frmBusqueda";
@@ -234,7 +219,6 @@
         private System.Windows.Forms.Label lblInicio;
         private System.Windows.Forms.DateTimePicker dpFin;
         private System.Windows.Forms.DataGridView datagridBusqueda;
-        private System.Windows.Forms.Button btnMostrarDetalle;
         private System.Windows.Forms.ErrorProvider mensaje_error;
     }
 }

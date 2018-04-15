@@ -274,9 +274,6 @@ namespace Splash
             }
         }
 
-        private void btnMostrarDetalle_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
     }
 }
